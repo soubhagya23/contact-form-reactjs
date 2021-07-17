@@ -12,10 +12,125 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: rgb(60, 60, 60);
-    font-weight: 300;
-    
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: rgb(60, 60, 60);
+  font-weight: 300;
+}
+
+.form {
+  width: 400px;
+  margin: auto;
+  background: white;
+  border-radius: 3px;
+  margin-top: 5em;
+  margin-bottom: 6em;
+  padding: 1.25em;
+  border-radius: 20px;
+  box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.51);
+}
+
+h3 {
+  font-size: 1.98em;
+  margin-bottom: 0.8em;
+  margin-top: 0.4em;
+  font-weight: 100;
+}
+
+.btn-primary {
+  box-shadow: 0;
+  border: none;
+  background-color: #f2c94c;
+  border-color: #f2c94c;
+  color: #ffffff;
+  outline: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: all 0.5s;
+  padding: 10px 19px;
+  font-size: 17px;
+  line-height: 1.471;
+  width: 30%;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 1.44em;
+  margin-bottom: 0.55em;
+  display: inherit;
+}
+
+.btn-primary:hover {
+  background-color: #1abc9c;
+}
+
+.form-group {
+  position: relative;
+  opacity: 1;
+  transition: 0.6s;
+}
+
+.input-field-icon {
+  color: #bfc9ca;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  transition: 0.6s;
+}
+
+.form-control {
+  transition: opacity 0.6s;
+  opacity: 1;
+  border: 0;
+  border-bottom: 2px solid #bdc3c7;
+  border-radius: 0;
+  background: white;
+  font-size: 15px;
+  line-height: 1.467;
+  padding: 4px;
+  height: 42px;
+  -webkit-appearance: none;
+}
+
+input,
+textarea {
+  transition: all 800ms;
+  font-family: "Roboto";
+  resize: none; /* removes the resize handle */
+  overflow: auto; /* removes default scrolling bars in IE */
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 4px;
+  color: #34495e;
+  margin-top: 1.25em;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #48c9b0;
+  color: #34495e;
+}
+
+input:focus + .input-field-icon {
+  color: #34495e;
+}
+
+textarea.form-control {
+  height: 120px;
+  transition: 0.6s;
+}
+
+textarea.form-control:focus {
+  height: 200px;
+  border-color: #48c9b0;
+}
+
+
+@media (max-width: 600px) {
+  .form {
+    width: 80%;
+    margin-top: 12%;
+  }
 }
